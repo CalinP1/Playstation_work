@@ -32,13 +32,12 @@ The pipeline processes raw gaming sales data, handles missing values intelligent
 
 ```
 Playstation_work/
-├── data/
-│   ├── raw/                    # Original dataset
-│   └── processed/              # Cleaned data output
-├── outputs/                    # Generated visualizations
-├── sql/                        # All 35 SQL queries
-├── database/                   # SQLite database
-├── playstation_analysis.ipynb  # Main pipeline notebook
+├── clean_data/                          # Cleaned data output
+├── outputs/                             # Generated visualizations
+├── sql/                                 # All 35 SQL queries
+├── PlayStation Sales and Metadata.csv   # Original dataset
+├── playstation_sales.db                 # SQLite database
+├── PlayStation_Data_report.ipynb        # Main pipeline notebook
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -224,26 +223,26 @@ Python 3.8 or higher
 
 ```bash
 # Clone the repository
-git clone https://github.com/CalinP1/Playstation_work.git
+git clone https://github.com/yourusername/Playstation_work.git
 cd Playstation_work
 
 # Install required packages
 pip install -r requirements.txt
 
 # Launch Jupyter Notebook
-jupyter notebook playstation_analysis.ipynb
+jupyter notebook PlayStation_Data_report.ipynb
 ```
 
 ### Running the Pipeline
 
-1. Open `playstation_analysis.ipynb`
+1. Open `PlayStation_Data_report.ipynb`
 2. Execute cells sequentially from top to bottom
 3. Pipeline will:
-   - Load raw data from `data/raw/`
+   - Load raw data from CSV file
    - Clean and transform data
-   - Create SQLite database in `database/`
+   - Create SQLite database (`playstation_sales.db`)
    - Generate visualizations in `outputs/`
-   - Save cleaned data to `data/processed/`
+   - Save cleaned data to `clean_data/`
 
 Expected runtime: 2-3 minutes on standard hardware
 
@@ -376,9 +375,9 @@ The goal was to showcase end-to-end data engineering skills on a real-world data
 
 Aspiring Data Engineer with background in CAE engineering, transitioning to data engineering through hands-on projects and continuous learning.
 
-- GitHub: [@CalinP1](https://github.com/CalinP1)
-- LinkedIn: [Connect with me]
-- Portfolio: [Additional projects]
+- GitHub: [@yourusername](https://github.com/yourusername)
+- LinkedIn: [Connect with me](https://www.linkedin.com/in/yourprofile)
+- Portfolio: [Additional projects](https://github.com/yourusername)
 
 ---
 
